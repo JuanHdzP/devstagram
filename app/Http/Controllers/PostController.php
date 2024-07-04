@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function index()
+    public function index(User $user)
     {
-        dd('Desde muro');
+        return view('dashboard', [
+            'user' => $user
+        ]);
     }
 }
