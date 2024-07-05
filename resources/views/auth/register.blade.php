@@ -9,7 +9,7 @@
         <div class="md:w-6/12 p-5">
             <img src="{{ asset('img/registrar.jpg') }}" alt="Imagen registro">
         </div>
-        <div class="md:w-4/12 bg-slate-50 p-6 rounded-lg shadow-xl">
+        <div class="md:w-4/12 bg-slate-50 p-10 rounded-lg shadow-xl mt-10 md:mt-0">
             <form action="{{ route('register') }}" method="post" autocomplete="off">
                 @csrf
                 <div class="mb-5">
