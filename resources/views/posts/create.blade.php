@@ -22,7 +22,7 @@
         </div>
 
         <div class="md:w-1/2 p-10 bg-slate-50 rounded-lg shadow-xl mt-10">
-            <form action="{{ route('post.store') }}" method="post" autocomplete="off">
+            <form action="{{ route('posts.store') }}" method="post" autocomplete="off">
                 @csrf
                 <div class="mb-5">
                     <label class="mb-2 block uppercase text-gray-500 font-bold" for="titulo">Titulo</label>
