@@ -10,7 +10,7 @@
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
     @stack('styles')
     @stack('scripts')
-
+    @livewireStyles
 </head>
 
 <body class="bg-gray-100">
@@ -64,6 +64,7 @@
         DevStagram - Todos los derecho reservados {{ now()->year }}
         {{-- @php echo date('Y') @endphp --}}
     </footer>
+    @livewireScripts
 </body>
 
 </html>
